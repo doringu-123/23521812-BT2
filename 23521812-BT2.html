@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav>
+      <a href="#gioithieu">Giới thiệu bản thân</a> |
+      <a href="#lienhe">Gửi thông tin và liên hệ cùng tôi</a>
+    </nav>
+
+    <!-- Phần 1: Giới thiệu -->
+    <div id="gioithieu" class="intro">
+      <h1 style="color: #caedff">Giới thiệu bản thân</h1>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPIpuEh8_yPXfdafaxN9sL03Eo4ljdjrsYTQ&s"
+        alt="Ảnh cá nhân"
+        width="150"
+        style="display: block; margin: auto"
+      />
+
+      <h2 style="color: #d8b4f8">Thông tin cơ bản</h2>
+      <ul>
+        <li>Tên: Nguyễn Trường Vũ</li>
+        <li>Năm sinh: 2005</li>
+        <li>Chuyên ngành: Hệ thống thông tin</li>
+      </ul>
+
+      <h2 style="color: #d8b4f8">Sở thích</h2>
+      <h3 style="color: #ffc7ea">Món ăn</h3>
+      <ol>
+        <li>Cơm tấm</li>
+        <li>Trà sữa trân châu</li>
+        <li>Hủ tiếu</li>
+      </ol>
+
+      <h3 style="color: #ffc7ea">Giải trí</h3>
+      <h4>Trò chơi</h4>
+      <ul>
+        <li>Liên quân</li>
+        <li>Hay day</li>
+        <li>Free fire</li>
+      </ul>
+      <h4>Bài nhạc yêu thích</h4>
+      <ul>
+        <li>Just dance - Lady Gaga</li>
+        <li>Tyrant - Beyonce</li>
+        <li>Em Gì Ơi - Jack & K-ICM</li>
+      </ul>
+
+      <!-- Bảng mục tiêu -->
+      <h2 style="color: #d8b4f8">Mục tiêu của bản thân</h2>
+      <table>
+        <tr>
+          <th>Mục tiêu</th>
+          <th>Thời hạn</th>
+          <th>Hoàn thành</th>
+        </tr>
+        <tr>
+          <td>Học xong HTML & CSS</td>
+          <td>3 tháng</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Thi TOEIC 800+</td>
+          <td>6 tháng</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Thực tập tại công ty IT</td>
+          <td>1 năm</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Phần 2: Form -->
+    <div id="lienhe" class="contact">
+      <h2 style="color: #d8b4f8">Gửi thông tin và giao lưu cùng tôi</h2>
+      <form class="form-container">
+        <div class="form-row">
+          <label for="fullname">Họ và tên:</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <br />
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <br />
+
+        <div class="form-row">
+          <label for="message">Tin nhắn:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <br />
+
+        <div class="form-row">
+          <label>Giới tính:</label>
+          <div class="options">
+            <label><input type="radio" name="gender" value="Nam" /> Nam</label>
+            <label><input type="radio" name="gender" value="Nữ" /> Nữ</label>
+          </div>
+        </div>
+        <br />
+
+        <div class="form-row">
+          <label>Sở thích:</label>
+          <div class="options">
+            <label
+              ><input type="checkbox" name="hobby" value="Nghe nhạc" /> Nghe
+              nhạc</label
+            >
+            <label
+              ><input type="checkbox" name="hobby" value="Bơi lội" /> Bơi
+              lội</label
+            >
+            <label
+              ><input type="checkbox" name="hobby" value="Biển" /> Đi ngủ</label
+            >
+          </div>
+        </div>
+        <br />
+
+        <div class="form-row">
+          <label for="major">Ngành:</label>
+          <select id="major" name="major">
+            <option>Khoa học Máy tính</option>
+            <option>Kỹ thuật Phần mềm</option>
+            <option>Hệ thống Thông tin</option>
+            <option>An toàn thông tin</option>
+            <option>Trí Tuệ nhân tạo</option>
+            <option>Thương mại điện tử</option>
+            <option>Công nghệ thông tin</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" value="Gửi" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>@2024 23521812 Nguyễn Trường Vũ</p>
+    </footer>
+  </body>
+</html>
